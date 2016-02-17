@@ -1,0 +1,13 @@
+{
+    "name": "alanaktion/tinyshoes",
+    "description": "A tiny issue tracker",
+    "require": {
+        "bcosca/fatfree": "^3.5"
+    },
+    "authors": [
+        {
+            "name": "Alan Hardman",
+            "email": "alanaktion@gmail.com"
+        }
+    ]
+}
