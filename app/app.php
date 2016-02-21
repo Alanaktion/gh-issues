@@ -28,9 +28,14 @@ final class App {
 			'ESCAPE' => false,
 			'PACKAGE' => 'alanaktion/gh-issues',
 		]);
+		self::$_router->mset(self::$_config);
 
 		// Initialize database connection and query builder
-		self::$_db = new SQL(QB::pdo(), 'mysql:host='.self::$_config['db']['host'].';port=3306;dbname='.self::$_config['db']['database']);
+		self::$_db = new DB\SQL(
+			'mysql:host='.self::$_config['db']['host'].';port=3306;dbname='.self::$_config['db']['database'],
+			self::$_config['db']['username'],
+			self::$_config['db']['password']
+		);
 
 		// Initialize routes
 		require_once 'routes.php';
