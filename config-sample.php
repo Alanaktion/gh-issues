@@ -5,6 +5,6 @@ return [
         "host" => "localhost",
         "username" => "root",
         "password" => "",
-        "database" => "tinyshoes",
+        "database" => "gh_issues",
     ],
 ];

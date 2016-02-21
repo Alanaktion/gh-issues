@@ -26,7 +26,7 @@ final class App {
 		self::$_router->mset([
 			'AUTOLOAD' => 'app/',
 			'ESCAPE' => false,
-			'PACKAGE' => 'alanaktion/tinyshoes',
+			'PACKAGE' => 'alanaktion/gh-issues',
 		]);
 
 		// Initialize database connection and query builder
